@@ -121,4 +121,23 @@
 require 'autoload.php';
 
 $rex=new Dog();
-var_dump($rex->run());
+$cat=new Cat();
+$cat->name='Kisa';
+
+// one address belongs to double obj;
+$cat2=$cat;
+
+// cat2 clone from cat;
+$cat2= clone $cat;
+
+$cat->name='maria';
+
+echo 'cat2 '. $cat2->name.'<br>';
+
+echo 'cat '. $cat->name;
+
+
+
+
+
+// var_dump($rex->run());
