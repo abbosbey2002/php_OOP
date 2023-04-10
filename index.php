@@ -84,34 +84,41 @@
 
 //  trait method
 
-trait Animal{
-    public function eat(){
-        return 'eat';
-    }
+// trait Animal{
+//     public function eat(){
+//         return 'eat';
+//     }
    
-    public function walk(){
-        return 'walking';
-    }
-    public function drinking(){
-        return 'just drink water';
-    }
-    public function makeSound(){
-        return 'make sound'. $this->sound;
-    }
-}
+//     public function walk(){
+//         return 'walking';
+//     }
+//     public function drinking(){
+//         return 'just drink water';
+//     }
+//     public function makeSound(){
+//         return 'make sound'. $this->sound;
+//     }
+// }
 
 
-class Animals{
-    use Animal;
-    public $name;
-    public $sound;
-    public function __construct($name, $sound){
-        $this->name=$name;
-        $this->sound=$sound;
-    }
+// class Animals{
+//     use Animal;
+//     public $name;
+//     public $sound;
+//     public function __construct($name, $sound){
+//         $this->name=$name;
+//         $this->sound=$sound;
+//     }
     
-}
+// }
 
 
-$rex=new Animals('rex,', 'vov vov');
-echo $rex->makeSound();
+// $rex=new Animals('rex,', 'vov vov');
+// echo $rex->makeSound();
+
+
+
+require 'autoload.php';
+
+$rex=new Dog();
+var_dump($rex->run());
